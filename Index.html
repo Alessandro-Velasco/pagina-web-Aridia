@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="
+es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tienda Online</title>
+    <meta name="viewport" content="device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+  </head>
+    <body>
+      <header class="main-header">
+      <script src="slider.js"></script>  
+       <div class="container container--flex">
+        <div class="main-header__container">
+          <h1 class="main-header__txt">All Adapters</h1>
+          <span class="icon-menu fas fa-solid fa-bars" id="btn-menu"></span>
+          <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+              <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+              <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
+              <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+              <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="main-header__container">
+        <span class="main-header__txt">Need Help</span>
+        <p class="main-header___txt"><i class="fas fa-sharp fa-solid fa-phone"></i> Call 12345677</p>
+        </div>
+        
+        <div class="main-header__container">
+          <i class="fas fa-user"></i>
+          <a href="" class="main-header__btn">My cart<i class="fas fa-regular fa-cart-shopping"></i></a>
+          <input type="search" class="main-header__input" placeholder="Buscar productos"><i class="fas fa-solid fa-magnifying-glass"></i>
+        </div>
+        </div>
+      </header>
+
+      <div class="container">
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="image1.jpg"></div>
+    <div class="swiper-slide"><img src="image2.jpg"></div>
+    <div class="swiper-slide"><img src="image3.jpg"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+      <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
+      </script>
+    </body>
+
+</html>
